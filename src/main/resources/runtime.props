@@ -1,0 +1,17 @@
+#browser can be 'chrome', 'firefox', 'headless'
+
+browser=chrome
+polling_interval=5000l
+max_time_out= 5000l * 40
+headlessContext=false
+
+//DRIVERS
+CHROME_DRIVER_WINDOWS=/uiautomationdrivers/chromedriver_win32.exe
+CHROME_DRIVER_MAC=/uiautomationdrivers/chromedriver_mac64
+CHROME_DRIVER_LINUX=/uiautomationdrivers/chromedriver_linux
+
+FF_DRIVER_WINDOWS=/uiautomationdrivers/geckodriver_win64.exe
+FF_DRIVER_MAC=/uiautomationdrivers/geckodriver_mac
+FF_DRIVER_LINUX=/uiautomationdrivers/geckodriver_linux
+
+IE_DRIVER_WIN=/uiautomationdrivers/IEDriverServer.exe

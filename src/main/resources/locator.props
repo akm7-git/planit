@@ -1,0 +1,36 @@
+#It is a locator properties file
+
+# Locators of Menu Items
+
+JupiterToysMenuBar_shop_link=Shop
+JupiterToysMenuBar_cart_xpath=//a[@href='#/cart']
+
+
+#Locators of Jupiter Toys Home Page
+
+jupiterToysHomePage_H1_xpath=//h1[text()='Jupiter Toys']
+
+#Locators of Jupiter Toys Contact Page
+
+jupiterToysContactPage_Forename_input_id=forename
+jupiterToysContactPage_Surname_input_id=surname
+jupiterToysContactPage_Email_input_id=email
+jupiterToysContactPage_Telephone_input_id=telephone
+jupiterToysContactPage_Message_textarea_id=message
+jupiterToysContactPage_Submit_button_xpath=//a[text()='Submit']
+
+
+#Locators of Jupiter Toys Shop Page
+
+jupiterToysShopPage_ItemBuy_button_xpath=//h4[text()='%s']/parent::div//a
+jupiterToysShopPage_Items_list_className=product ng-scope
+jupiterToysShopPage_product1Buy_button_xpath=//li[@id='product-1']//a
+
+#jupiterToysShopPage_TeddyBearBuy_button_xpath=//h4[text()='Teddy Bear']/parent::div//a
+#jupiterToysShopPage_FunnyCowBuy_button_xpath=//h4[text()='Funny Cow']/parent::div//a
+
+#Locators of Jupiter Toys cart Page
+
+jupiterToysCartPage_items_tr_xpath=//tr[@class='cart-item ng-scope']
+jupiterToysCartPage_checkout_href_link=Check Out
+jupiterToysCartPage_shoppingLink_href_xpath=//a[contains(text(),'Start Shopping')]
