@@ -1,4 +1,4 @@
-package com.test.src.constants;
+package com.planit.src.constants;
 
 public enum SlaveOs {
 	LINUX, WINDOWS, MAC;
@@ -6,19 +6,19 @@ public enum SlaveOs {
 	private static String osType = System.getProperty("os.name").toLowerCase();
 	private static SlaveOs slaveOs;
 
-	private static boolean isWindows() throws Exception {
-		return (osType.indexOf("win") >= 0);
+	private static boolean isWindows() {
+		return (osType.contains("win"));
 	}
 
-	private static boolean isMac() throws Exception {
-		return (osType.indexOf("mac") >= 0);
+	private static boolean isMac() {
+		return (osType.contains("mac"));
 	}
 
-	private static boolean isLinux() throws Exception {
-		return (osType.indexOf("nix") >= 0 || osType.indexOf("nux") >= 0 || osType.indexOf("aix") >= 0);
+	private static boolean isLinux(){
+		return (osType.contains("nix") || osType.contains("nux") || osType.contains("aix"));
 	}
 
-	private static void determineSlaveOsType() throws Exception {
+	private static void determineSlaveOsType() {
 
 		if (isWindows())
 			slaveOs = SlaveOs.WINDOWS;
@@ -31,7 +31,7 @@ public enum SlaveOs {
 
 	}
 
-	public static SlaveOs getOs() throws Exception {
+	public static SlaveOs getOs() {
 		if (null == slaveOs) {
 			determineSlaveOsType();
 		}

@@ -1,0 +1,46 @@
+#It is a locator properties file
+
+# --- Locators of Menu Items ---
+
+JupiterToysMenuBar_shop_id=nav-shop
+JupiterToysMenuBar_contact_id=nav-contact
+JupiterToysMenuBar_cart_id=nav-cart
+
+
+# --- Locators of Jupiter Toys Home Page ---
+
+jupiterToysHomePage_H1_xpath=//h1[text()='Jupiter Toys']
+
+# --- Locators of Jupiter Toys Contact Page ---
+
+jupiterToysContactPage_Forename_input_id=forename
+jupiterToysContactPage_Surname_input_id=surname
+jupiterToysContactPage_Email_input_id=email
+jupiterToysContactPage_Telephone_input_id=telephone
+jupiterToysContactPage_Message_textarea_id=message
+jupiterToysContactPage_Submit_button_xpath=//a[text()='Submit']
+jupiterToysContactPage_Back_button_xpath=//a[@ng-click="goBack()"]
+jupiterToysContactPage_SuccessMessage_div_xpath=//div[@ui-if='contactValidSubmit']/div
+jupiterToysContactPage_SubmitFeedbackPopup_h1_xpath=//div[@class='modal-header']/h1
+jupiterToysContactPage_SuccessMessage_text=Thanks %s, we appreciate your feedback.
+
+
+# --- Locators of Jupiter Toys Shop Page ---
+
+jupiterToysShopPage_ItemBuy_button_xpath=//h4[text()='%s']/parent::div//a
+jupiterToysShopPage_Items_list_className=product ng-scope
+jupiterToysShopPage_product1Buy_button_xpath=//li[@id='product-1']//a
+
+#jupiterToysShopPage_TeddyBearBuy_button_xpath=//h4[text()='Teddy Bear']/parent::div//a
+#jupiterToysShopPage_FunnyCowBuy_button_xpath=//h4[text()='Funny Cow']/parent::div//a
+
+# --- Locators of Jupiter Toys cart Page ---
+
+jupiterToysCartPage_items_tr_xpath=//tr[@class='cart-item ng-scope']
+jupiterToysCartPage_checkout_href_xpath=//a[@href='#/checkout']
+jupiterToysCartPage_shoppingLink_href_xpath=//a[contains(text(),'Start Shopping')]
+jupiterToysCartPage_item_td_xpath=//td[contains(text(),'%s')]
+jupiterToysCartPage_quantity_inputValue_xpath=//td[contains(text(),'%s')]/parent::tr//input[@name='quantity']
+jupiterToysCartPage_price_td_xpath=//td[contains(text(),'%s')]/parent::tr//td[2]
+jupiterToysCartPage_total_td_xpath=//td[contains(text(),'%s')]/parent::tr//input[@name='quantity']/parent::td/following-sibling::td[@class]
+jupiterToysCartPage_cartItems_span_xpath=//li[@id='nav-cart']/a//span
