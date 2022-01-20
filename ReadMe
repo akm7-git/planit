@@ -63,7 +63,7 @@ mvn test -Dsurefire.suiteXmlFiles=src/main/resources/testsuites/testng-testcase3
 
 command:
 --------
-mvn test -Dsurefire.suiteXmlFiles=src/main/resources/testsuites/ testng-fullsuite.xml
+mvn test -Dsurefire.suiteXmlFiles=src/main/resources/testsuites/testng-fullsuite.xml
 
 UPDATING RUN CONFIGURATION:
 ==========================
