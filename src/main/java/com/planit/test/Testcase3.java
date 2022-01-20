@@ -1,4 +1,4 @@
-package com.test;
+package com.planit.test;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -58,7 +58,7 @@ public class Testcase3 extends TestUIBase {
 	public void verifyTheSubTotalOfEachItem(String item, int qty) throws UIAutomationException, InterruptedException {
 
 		JsonObject itemDetailsFromCart = jupiterToysCartPage.fetchDetails(item);
-		Assert.assertEquals(jupiterToysCartPage.isItemPresentOnCartPage(item), true);
+		Assert.assertTrue(jupiterToysCartPage.isItemPresentOnCartPage(item));
 
 		int noOfUnit = itemDetailsFromCart.get("quantity").getAsInt();
 		double unitPrice = itemDetailsFromCart.get("unitPrice").getAsDouble();

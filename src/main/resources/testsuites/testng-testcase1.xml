@@ -6,7 +6,7 @@
 
 	<test name="Testcase1">
 		<classes>
-			<class name="com.test.Testcase1" />
+			<class name="com.planit.test.Testcase1" />
 		</classes>
 	</test>
 </suite>

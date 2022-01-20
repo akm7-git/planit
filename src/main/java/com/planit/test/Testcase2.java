@@ -1,4 +1,4 @@
-package com.test;
+package com.planit.test;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -57,7 +57,7 @@ public class Testcase2 extends TestUIBase {
 			throws UIAutomationException, InterruptedException {
 
 		JsonObject itemDetailsFromCart = jupiterToysCartPage.fetchDetails(item);
-		Assert.assertEquals(jupiterToysCartPage.isItemPresentOnCartPage(item), true);
+		Assert.assertTrue(jupiterToysCartPage.isItemPresentOnCartPage(item));
 		Assert.assertEquals(itemsToBeBought.get(item), itemDetailsFromCart.get("quantity").getAsInt());
 	}
 

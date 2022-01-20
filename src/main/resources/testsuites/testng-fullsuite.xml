@@ -6,9 +6,9 @@
 
 	<test name="Testcases1-3">
 		<classes>
-			<class name="com.test.Testcase1" />
-			<class name="com.test.Testcase2" />
-			<class name="com.test.Testcase3" />
+			<class name="com.planit.test.Testcase1" />
+			<class name="com.planit.test.Testcase2" />
+			<class name="com.planit.test.Testcase3" />
 		</classes>
 	</test>
 </suite>

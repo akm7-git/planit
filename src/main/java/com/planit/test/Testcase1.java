@@ -1,4 +1,4 @@
-package com.test;
+package com.planit.test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -47,7 +47,7 @@ public class Testcase1 extends TestUIBase {
 	public void FillUpFeedback(JsonElement item) throws UIAutomationException, InterruptedException {
 		JsonObject data = item.getAsJsonObject();
 		boolean result = jupiterToysContactPage.submitFeedbackAndVerifySuccessMessage(data);
-		Assert.assertEquals(result, true, "The success message verification has failed");
+		Assert.assertTrue(result, "The success message verification has failed");
 		jupiterToysContactPage.clickOnBackButton();
 	}
 
@@ -57,8 +57,7 @@ public class Testcase1 extends TestUIBase {
 		JsonArray content = (JsonArray) JsonParser.parseReader(new FileReader(
 				new File(System.getProperty("user.dir") + "/src/main/resources/dataprovider/feedbackData.json")));
 
-		Iterator<JsonElement> itr = content.iterator();
-		return itr;
+		return content.iterator();
 	}
 
 	@AfterClass
