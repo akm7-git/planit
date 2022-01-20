@@ -72,6 +72,6 @@ To change the browser or to run the tests in headless context the settings could
 
 location:
 ---------
-src/main/resources/configs/ runtime.props
+src/main/resources/configs/runtime.props
 
 Note: by default, the browser is set to chrome and the headless mode is false
