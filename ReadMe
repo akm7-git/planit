@@ -1,0 +1,77 @@
+				  ======================================
+				  ||                READ ME:           ||
+				  ======================================
+
+TECH STACK USED:
+================
+•	Java
+•	Maven
+•	Web-driver
+•	Json
+•	TestNG
+
+STEPS:
+======
+1.	Download code
+git clone https://github.com/akm7-git/planit.git
+
+2.	compile the code using maven or import the project to an IDE and compile it
+mvn clean install -DskipTests
+
+
+HOW TO RUN THE TESTS:
+=====================
+Tests can also be invoked using the following commands
+
+•	To execute Test Scenario -1:
+	Scenario:
+		1. From the home page go to contact page
+		2. Populate mandatory fields
+		3. Click submit button
+		4. Validate successful submission message
+
+command:
+--------
+mvn test -Dsurefire.suiteXmlFiles=src/main/resources/testsuites/testng-testcase1.xml
+
+
+•	To execute Test Scenario-2:
+	Scenario:
+		1. From the home page go to shop page
+		2. Click buy button 2 times on “Funny Cow”
+		3. Click buy button 1 time on “Fluffy Bunny”
+		4. Click the cart menu
+		5. Verify the items are in the cart
+
+command:
+--------
+mvn test -Dsurefire.suiteXmlFiles=src/main/resources/testsuites/testng-testcase2.xml
+
+
+•	To execute Test Scenario-3:
+	Scenario:
+		1. Buy 2 Stuffed Frog, 5 Fluffy Bunny, 3 Valentine Bear
+		2. Go to the cart page
+		3. Verify the subtotal for each product is correct
+
+command:
+--------
+mvn test -Dsurefire.suiteXmlFiles=src/main/resources/testsuites/testng-testcase3.xml
+
+
+•	To run all the 3 tests in parallel
+
+command:
+--------
+mvn test -Dsurefire.suiteXmlFiles=src/main/resources/testsuites/ testng-fullsuite.xml
+
+UPDATING RUN CONFIGURATION:
+==========================
+
+To change the browser or to run the tests in headless context the settings could be updated in the runtime.props.
+
+location:
+---------
+src/main/resources/configs/ runtime.props
+
+Note: by default, the browser is set to chrome and the headless mode is false
