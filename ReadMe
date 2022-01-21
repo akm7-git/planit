@@ -15,7 +15,7 @@ STEPS:
 1.	Download code
 git clone https://github.com/akm7-git/planit.git
 
-2.	compile the code using maven or import the project to an IDE and compile it
+2.	compile the code using maven from the root "planit" directory or import the project to an IDE and compile it
 mvn clean install -DskipTests
 
 
